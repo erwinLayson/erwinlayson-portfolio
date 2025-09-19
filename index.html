@@ -9,6 +9,8 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <!-- Matrix Background Animation -->
@@ -17,7 +19,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand">ERWIN.EXE</a>
+            <a href="#" class="navbar-brand">ERWIN PORTFOLIO</a>
 
             <!-- Offcanvas Toggle Button -->
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas" aria-controls="sidebarOffcanvas">
@@ -49,25 +51,25 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav d-flex justify-content-center flex-column text-center">
                 <li class="nav-item mb-3">
                     <a class="nav-link" href="#home" data-bs-dismiss="offcanvas">
-                        <span style="color: #00ff00;">&gt;</span> ./home
+                        <span style="color: #00ff00;"></span> ./home
                     </a>
                 </li>
                 <li class="nav-item mb-3">
                     <a class="nav-link" href="#projects" data-bs-dismiss="offcanvas">
-                        <span style="color: #00ff00;">&gt;</span> ./projects
+                        <span style="color: #00ff00;"></span> ./projects
                     </a>
                 </li>
                 <li class="nav-item mb-3">
                     <a class="nav-link" href="#about" data-bs-dismiss="offcanvas">
-                        <span style="color: #00ff00;">&gt;</span> ./about
+                        <span style="color: #00ff00;"></span> ./about
                     </a>
                 </li>
                 <li class="nav-item mb-3">
                     <a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">
-                        <span style="color: #00ff00;">&gt;</span> ./contact
+                        <span style="color: #00ff00;"></span> ./contact
                     </a>
                 </li>
             </ul>
@@ -83,18 +85,43 @@
             
             <div class="row align-items-center mt-5">
                 <div class="col-md-4 text-center">
-                    <img src="./image/profile.jpg" alt="Erwin Profile" class="profile-img img-fluid">
+                    <img src="./image/profile2.jpg" alt="Erwin Profile" class="profile-img img-fluid">
                 </div>
                 <div class="col-md-8">
                     <div class="mt-4">
                         <p style="color: #00ff00; font-size: 1.2rem;">
-                            <span style="color: #fff;">root@erwin:~$</span> whoami<br>
-                            <span class="typing-text" style="animation-delay: 1s;">ERWIN B. LAYSON- Full Stack Developer</span>
+                            <span style="color: #fff;">root@erwin:~$</span> WHO AM I<br>
+                            <span>ERWIN B. LAYSON - Full Stack Developer Student</span>
                         </p>
                         <p style="color: #00ff00; margin-top: 20px;">
-                            <span style="color: #fff;">root@erwin:~$</span> cat skills.txt<br>
-                            <span style="color: #888;">JavaScript | Express.js | Node.js | mysql <br> | CodeIgniter 4 | PHP | </span>
+                            <span style="color: #fff;">root@erwin:~$</span> Programming & Scripting<br>
                         </p>
+                        <div class="skills-icons">
+                            <div class="text-center">
+                                <i class="fab fa-js-square" style="color: #f7df1e;"></i><br>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="text-center">
+                                <i class="fab fa-node-js" style="color: #68a063;"></i><br>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="text-center">
+                                <i class="fas fa-server" style="color: #00ff00;"></i><br>
+                                <span>Express.js</span>
+                            </div>
+                            <div class="text-center">
+                                <i class="fas fa-database" style="color: #00758f;"></i><br>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="text-center">
+                                <i class="fas fa-fire" style="color: #ee4623;"></i><br>
+                                <span>CodeIgniter 4</span>
+                            </div>
+                            <div class="text-center">
+                                <i class="fab fa-php" style="color: #8993be;"></i><br>
+                                <span>PHP</span>
+                            </div>
+                        </div>
                         <p style="color: #00ff00; margin-top: 20px;">
                             <span style="color: #fff;">root@erwin:~$</span> ./status.sh<br>
                             <span style="color: #0f0;">● SYSTEM ONLINE</span><br>
@@ -110,14 +137,15 @@
     <section id="home" class="container main-container">
         <div class="terminal-window">
             <div class="terminal-header">
-                <div class="typing-text">HOME.EXE - SYSTEM INITIALIZED</div>
+                <div class="typing-text">HOME - SYSTEM INITIALIZED</div>
             </div>
             
             <div class="mt-4">
                 <p style="color: #00ff00; font-size: 1.1rem;">
-                    <span style="color: #fff;">root@erwin:~$</span> ./welcome.sh<br>
+                    <span style="color: #fff;">root@erwin:~$</span> ./WELCOME<br>
                     <span style="color: #0f0;">Welcome to my Digital Portfolio</span><br>
-                    <span style="color: #888;">I'm a passionate developer crafting digital solutions</span>
+                    <span style="color: #888;">Hi, I’m Erwin Layson a passionate full-stack developer and an IT student who’s constantly learning and building.
+Here, you’ll find my projects, experiments, and contributions that reflect my journey in software development.</span>
                 </p>
                 <p style="color: #00ff00; margin-top: 20px;">
                     <span style="color: #fff;">root@erwin:~$</span> cat mission.txt<br>
@@ -126,10 +154,10 @@
                     Always learning, always coding, always improving</span>
                 </p>
                 <p style="color: #00ff00; margin-top: 20px;">
-                    <span style="color: #fff;">root@erwin:~$</span> uptime<br>
-                    <span style="color: #0f0;">● No Real Experience Yet</span><br>
-                    <span style="color: #0f0;">● 5+School Projects Done</span><br>
-                    <span style="color: #0f0;">● Always ready for new challenges</span>
+                    <span style="color: #fff;">root@erwin:~$</span> WHAT I DO<br>
+                    <span style="color: #0f0;">● Frontend & Backend development</span><br>
+                    <span style="color: #0f0;">● Web applications and system design</span><br>
+                    <span style="color: #0f0;">● Exploring new technologies to grow my skills</span>
                 </p>
             </div>
         </div>
@@ -139,7 +167,7 @@
     <section id="projects" class="container main-container">
         <div class="terminal-window">
             <div class="terminal-header">
-                <div class="typing-text">PROJECTS.EXE - LOADING REPOSITORY</div>
+                <div class="typing-text">PROJECTS - LOADING REPOSITORY</div>
             </div>
             
             <div class="mt-4">
@@ -153,9 +181,9 @@
                         <div class="terminal-border p-4">
                             <h5 style="color: #00ff00;">├── E-Commerce Platform</h5>
                             <p style="color: #888; font-size: 0.9rem;">
-                                <span style="color: #fff;">Technologies:</span> PHP, CodeIgniter 4, MySQL<br>
+                                <span style="color: #fff;">Technologies:</span> PHP, JAVASCRIPT, MySQL<br>
                                 <span style="color: #fff;">Status:</span> <span style="color: #0f0;">Production Ready</span><br>
-                                <span style="color: #fff;">Features:</span> Full shopping cart, San Emanuel youth mangament System
+                                <span style="color: #fff;">Features:</span> Full shopping cart, with tracking order 
                             </p>
                         </div>
                     </div>
@@ -164,7 +192,7 @@
                         <div class="terminal-border p-4">
                             <h5 style="color: #00ff00;">├── Task Management API</h5>
                             <p style="color: #888; font-size: 0.9rem;">
-                                <span style="color: #fff;">Technologies:</span> Node.js, Express.js, MySQL<br>
+                                <span style="color: #fff;">Technologies:</span> Javascript, PHP, HTML, Bootstrap, MySQL<br>
                                 <span style="color: #fff;">Status:</span> <span style="color: #0f0;">Active Development</span><br>
                                 <span style="color: #fff;">Features:</span> RESTful API, authentication, real-time updates
                             </p>
@@ -208,7 +236,7 @@
     <section id="about" class="container main-container">
         <div class="terminal-window">
             <div class="terminal-header">
-                <div class="typing-text">ABOUT.EXE - PERSONAL DATA LOADED</div>
+                <div class="typing-text">ABOUT - PERSONAL DATA LOADED</div>
             </div>
             
             <div class="mt-4">
@@ -264,7 +292,7 @@
     <section id="contact" class="container main-container">
         <div class="terminal-window">
             <div class="terminal-header">
-                <div class="typing-text">CONTACT.EXE - ESTABLISHING CONNECTIONS</div>
+                <div class="typing-text">CONTACT - ESTABLISHING CONNECTIONS</div>
             </div>
             
             <div class="mt-4">
@@ -327,7 +355,6 @@
                 
                 <p style="color: #00ff00; margin-top: 20px;">
                     <span style="color: #fff;">root@erwin:~$</span> echo "Let's build something amazing together!"<br>
-                    <span style="color: #0f0;">Let's build something amazing together!</span>
                 </p>
             </div>
         </div>
