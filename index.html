@@ -3,367 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erwin Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Digital Portfoliio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+
+    <link rel="stylesheet" href="style/index.css">
+
 </head>
 <body>
-    <!-- Matrix Background Animation -->
-    <div class="matrix-bg" id="matrixBg"></div>
+    <div class="container">
+       <div class="header">
+            <div class="welcome-message">
+                <h1>Hello</h1>
+                <p>_____I'm Erwin</p>
+                <h2>Aspiring Full-stack Web Developer</h2>
+            </div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand">ERWIN PORTFOLIO</a>
+            <div class="profile-pic">
+                <img src="/image/me.png" alt="User profile" class="profile">
+            </div>
+       </div>
 
-            <!-- Offcanvas Toggle Button -->
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas" aria-controls="sidebarOffcanvas">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <!-- Desktop Navigation -->
-            <ul class="navbar-nav ms-auto d-none d-lg-flex">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">./home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">./projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">./about</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">./contact</a>
-                </li>
-            </ul>
+        <div class="navigation">
+            <div class="home"><a href="#home">Home</a></div>
+            <div class="home"><a href="#about">About</a></div>
+            <div class="home"><a href="#skill">Languages</a></div>
+            <div class="home"><a href="#contact">Contact</a></div>
         </div>
-    </nav>
 
-    <!-- Offcanvas Sidebar -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebarOffcanvas" aria-labelledby="sidebarOffcanvasLabel">
-        <div class="offcanvas-header border-bottom" style="border-color: #00ff00 !important;">
-            <h5 class="offcanvas-title" id="sidebarOffcanvasLabel">TERMINAL_MENU.EXE</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <ul class="navbar-nav d-flex justify-content-center flex-column text-center">
-                <li class="nav-item mb-3">
-                    <a class="nav-link" href="#home" data-bs-dismiss="offcanvas">
-                        <span style="color: #00ff00;"></span> ./home
-                    </a>
-                </li>
-                <li class="nav-item mb-3">
-                    <a class="nav-link" href="#projects" data-bs-dismiss="offcanvas">
-                        <span style="color: #00ff00;"></span> ./projects
-                    </a>
-                </li>
-                <li class="nav-item mb-3">
-                    <a class="nav-link" href="#about" data-bs-dismiss="offcanvas">
-                        <span style="color: #00ff00;"></span> ./about
-                    </a>
-                </li>
-                <li class="nav-item mb-3">
-                    <a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">
-                        <span style="color: #00ff00;"></span> ./contact
-                    </a>
-                </li>
-            </ul>
+        <div class="content">
+            <section id="home">
+                <div class="welcome-msg">
+                    <h3>Welcome to my portfolio</h3>
+                    <p class="welcome-message">
+                        I am <b>Erwin B. Layson</b> an Aspiring Full-Stack Web Developer passionate about building responsive, user-friendly, and dynamic web applications. <br> Explore my projects and see how I turn ideas into interactive experiences.
+                    </p>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="discusion">
+                   <h3>About Me</h3>
+
+                    <div class="about-me-msg">
+                        <p>
+                            Hi! I’m Erwin B. Layson, a 3rd-year IT student at Sultan Kudarat State University – Isulan Campus.
+                        </p>
+
+                        <p>
+                            I may not be the top academic student, but I’m someone who’s genuinely obsessed with writing code and building web applications. I love creating systems that not only work but also make people’s lives easier.
+                        </p>
+                        <ul>
+                            <p>Over the past few years, I’ve developed various projects such as:</p>
+                            <li>Basic CRUD systems using HTML, CSS, and PHP</li>
+                            <li>Interactive CRUD applications using JavaScript and AJAX</li>
+                            <li>Express.js project – SKHub, a platform designed for SK officials to manage youth records, post announcements, and compute annual income in real-time and etc.</li>
+                        </ul>
+
+                        <p>
+                            Every project I build teaches me something new from solving bugs to understanding how each part of a web app connects. My goal is to keep improving my skills and become a skilled Full-Stack Web Developer who can build fast, secure, and user-friendly web applications.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="skill">
+                 <!-- container for icons -->
+                <div class="tech-icons">
+                    <h2>Languages</h2>
+                    <i class="devicon-javascript-plain colored" title="JavaScript"> JavaScipt</i>
+                    <i class="devicon-php-plain colored" title="PHP"> PHP</i>
+                    <i class="devicon-html5-plain colored" title="HTML5"> HTML</i>
+                    <i class="devicon-css3-plain colored" title="CSS3"> CSS</i>
+                    <i class="devicon-express-original" title="Express"> Express.js</i>
+                    <i class="devicon-nodejs-plain colored" title="Node.js"> Node.js</i>
+                    <i class="devicon-codeigniter-plain colored" title="CodeIgniter"> Code Igniter 4</i>
+                </div>
+
+                <div class="tech-info">
+                    <div>
+                        <h3>Main Tech</h3>
+                        <i class="devicon-javascript-plain colored" title="JavaScript"> JavaScipt</i>
+                    </div>
+
+                    <div class="what-i-can-do">
+                        What I can do?
+                        <ul>
+                            <li>Frontend Development</li>
+                            <li>Backend Development</li>
+                            <li>FullStack </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <h3>Contact Me </h3>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/warsak.busdak">Facebook Account</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/erwinLayson">Github</a>
+                    </li>
+                    <li>
+                        <i class="bi bi-envelope"></i> erwinlayson@sksu.edu.ph
+                    </li>
+                </ul>
+            </section>
         </div>
     </div>
+    
 
-    <!-- Main Content -->
-    <div class="container main-container">
-        <div class="terminal-window">
-            <div class="terminal-header">
-                <div class="typing-text">INITIALIZING PORTFOLIO.EXE...</div>
-            </div>
-            
-            <div class="row align-items-center mt-5">
-                <div class="col-md-4 text-center">
-                    <img src="./image/profile2.jpg" alt="Erwin Profile" class="profile-img img-fluid">
-                </div>
-                <div class="col-md-8">
-                    <div class="mt-4">
-                        <p style="color: #00ff00; font-size: 1.2rem;">
-                            <span style="color: #fff;">root@erwin:~$</span> WHO AM I<br>
-                            <span>ERWIN B. LAYSON - 3rd Year IT Student</span>
-                        </p>
-                        <p style="color: #00ff00; margin-top: 20px;">
-                            <span style="color: #fff;">root@erwin:~$</span> Programming & Scripting<br>
-                        </p>
-                        <div class="skills-icons d-flex justify-content-center gap-4 flex-wrap">
-                            <div class="text-center">
-                                <i class="fab fa-js-square" style="color: #f7df1e;"></i><br>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="text-center">
-                                <i class="fab fa-node-js" style="color: #68a063;"></i><br>
-                                <span>Node.js</span>
-                            </div>
-                            <div class="text-center">
-                                <i class="fas fa-server" style="color: #00ff00;"></i><br>
-                                <span>Express.js</span>
-                            </div>
-                            <div class="text-center">
-                                <i class="fas fa-database" style="color: #00758f;"></i><br>
-                                <span>MySQL</span>
-                            </div>
-                            <div class="text-center">
-                                <i class="fas fa-fire" style="color: #ee4623;"></i><br>
-                                <span>CodeIgniter 4</span>
-                            </div>
-                            <div class="text-center">
-                                <i class="fab fa-php" style="color: #8993be;"></i><br>
-                                <span>PHP</span>
-                            </div>
-                        </div>
-                        <p style="color: #00ff00; margin-top: 20px;">
-                            <span style="color: #fff;">root@erwin:~$</span> ./status.sh<br>
-                            <span style="color: #0f0;">● SYSTEM ONLINE</span><br>
-                            <span style="color: #0f0;">● READY FOR NEW CONNECTIONS</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Home Section -->
-    <section id="home" class="container main-container">
-        <div class="terminal-window">
-            <div class="terminal-header">
-                <div class="typing-text">HOME - SYSTEM INITIALIZED</div>
-            </div>
-            
-            <div class="mt-4">
-                <p style="color: #00ff00; font-size: 1.1rem;">
-                    <span style="color: #fff;">root@erwin:~$</span> ./WELCOME<br>
-                    <span style="color: #0f0;">Welcome to my Digital Portfolio</span><br>
-                    <span style="color: #888;">Hi, I’m Erwin Layson a passionate full-stack developer and an IT student who’s constantly learning and building.
-Here, you’ll find my projects, experiments, and contributions that reflect my journey in software development.</span>
-                </p>
-                <p style="color: #00ff00; margin-top: 20px;">
-                    <span style="color: #fff;">root@erwin:~$</span> cat mission.txt<br>
-                    <span style="color: #888;">Building innovative web applications with modern technologies<br>
-                    Specializing in full-stack development and user experience<br>
-                    Always learning, always coding, always improving</span>
-                </p>
-                <p style="color: #00ff00; margin-top: 20px;">
-                    <span style="color: #fff;">root@erwin:~$</span> WHAT I DO<br>
-                    <span style="color: #0f0;">● Frontend & Backend development</span><br>
-                    <span style="color: #0f0;">● Web applications and system design</span><br>
-                    <span style="color: #0f0;">● Exploring new technologies to grow my skills</span>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="container main-container">
-        <div class="terminal-window">
-            <div class="terminal-header">
-                <div class="typing-text">PROJECTS - LOADING REPOSITORY</div>
-            </div>
-            
-            <div class="mt-4">
-                <p style="color: #00ff00; font-size: 1.1rem;">
-                    <span style="color: #fff;">root@erwin:~$</span> ls -la ./projects/<br>
-                    <span style="color: #0f0;">5+ total project</span>
-                </p>
-                
-                <div class="row mt-4">
-                    <div class="col-md-6 mb-4">
-                        <div class="terminal-border p-4">
-                            <h5 style="color: #00ff00;">├── E-Commerce Platform</h5>
-                            <p style="color: #888; font-size: 0.9rem;">
-                                <span style="color: #fff;">Technologies:</span> PHP, JAVASCRIPT, MySQL<br>
-                                <span style="color: #fff;">Status:</span> <span style="color: #0f0;">Production Ready</span><br>
-                                <span style="color: #fff;">Features:</span> Full shopping cart, with tracking order 
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-6 mb-4">
-                        <div class="terminal-border p-4">
-                            <h5 style="color: #00ff00;">├── Task Management API</h5>
-                            <p style="color: #888; font-size: 0.9rem;">
-                                <span style="color: #fff;">Technologies:</span> Javascript, PHP, HTML, Bootstrap, MySQL<br>
-                                <span style="color: #fff;">Status:</span> <span style="color: #0f0;">Active Development</span><br>
-                                <span style="color: #fff;">Features:</span> RESTful API, authentication, real-time updates
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-6 mb-4">
-                        <div class="terminal-border p-4">
-                            <h5 style="color: #00ff00;">├── Portfolio Website</h5>
-                            <p style="color: #888; font-size: 0.9rem;">
-                                <span style="color: #fff;">Technologies:</span> HTML, CSS, JavaScript, Bootstrap<br>
-                                <span style="color: #fff;">Status:</span> <span style="color: #0f0;">Live</span><br>
-                                <span style="color: #fff;">Features:</span> Responsive design, Animations
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-6 mb-4">
-                        <div class="terminal-border p-4">
-                            <h5 style="color: #00ff00;">└── Web Applications</h5>
-                            <p style="color: #888; font-size: 0.9rem;">
-                                <span style="color: #fff;">Technologies:</span> Various web technologies<br>
-                                <span style="color: #fff;">Status:</span> <span style="color: #0f0;">Multiple Projects</span><br>
-                                <span style="color: #fff;">Features:</span> Custom solutions for clients
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <p style="color: #00ff00; margin-top: 20px;">
-                    <span style="color: #fff;">root@erwin:~$</span> git status<br>
-                    <span style="color: #0f0;">On branch main</span><br>
-                    <span style="color: #0f0;">Your branch is up to date with 'origin/main'</span><br>
-                    <span style="color: #0f0;">Ready to push new innovations!</span>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="container main-container">
-        <div class="terminal-window">
-            <div class="terminal-header">
-                <div class="typing-text">ABOUT - PERSONAL DATA LOADED</div>
-            </div>
-            
-            <div class="mt-4">
-                <p style="color: #00ff00; font-size: 1.1rem;">
-                    <span style="color: #fff;">root@erwin:~$</span> cat /etc/passwd | grep erwin<br>
-                    <span style="color: #0f0;">erwin:x:1000:1000:Full Stack Developer:/home/erwin:/bin/bash</span>
-                </p>
-                
-                <div class="row mt-4">
-                    <div class="col-md-8">
-                        <p style="color: #00ff00; margin-top: 20px;">
-                            <span style="color: #fff;">root@erwin:~$</span> cat about_me.txt<br>
-                            <span style="color: #888;">
-                                Hello, I’m Erwin Layson a passionate full-stack developer in the making. As a student currently honing my skills, I focus on building a strong foundation in backend development while continuing to sharpen my frontend expertise. My journey began with curiosity and has grown into a genuine love for creating meaningful digital solutions. With an eagerness to learn and adapt, I’m committed to becoming a well-rounded developer ready to take on real-world challenges.
-                            </span>
-                        </p>
-                        
-                        <p style="color: #00ff00; margin-top: 20px;">
-                            <span style="color: #fff;">root@erwin:~$</span> ./experience.sh<br>
-                            <span style="color: #0f0;">● No real experience but lot of school work done</span><br>
-                            <span style="color: #0f0;">● Specialized in JavaScript & Express.js ecosystems</span><br>
-                            <span style="color: #0f0;">● Experience with modern frameworks</span><br>
-                            <span style="color: #0f0;">● Database design and optimization</span>
-                        </p>
-                        
-                        <p style="color: #00ff00; margin-top: 20px;">
-                            <span style="color: #fff;">root@erwin:~$</span> cat philosophy.txt<br>
-                            <span style="color: #888;">
-                                true craftsmanship in code comes not from shortcuts or clever tricks, but from the discipline to create something simple, clear, and lasting
-                            </span>
-                        </p>
-                    </div>
-                    
-                    <div class="col-md-4">
-                        <div class="terminal-border p-3">
-                            <h6 style="color: #00ff00;">SYSTEM SPECS:</h6>
-                            <p style="color: #888; font-size: 0.9rem; margin: 0;">
-                                <span style="color: #fff;">CPU:</span> Problem Solver<br>
-                                <span style="color: #fff;">RAM:</span> Willing to learn to other Developer<br>
-                                <span style="color: #fff;">Storage:</span> No Experience<br>
-                                <span style="color: #fff;">GPU:</span> Visual Design Processor<br>
-                                <span style="color: #fff;">OS:</span> Continuous Learning Mode<br>
-                                <span style="color: #fff;">Network:</span> Always Connected
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container main-container">
-        <div class="terminal-window">
-            <div class="terminal-header">
-                <div class="typing-text">CONTACT - ESTABLISHING CONNECTIONS</div>
-            </div>
-            
-            <div class="mt-4">
-                <p style="color: #00ff00; font-size: 1.1rem;">
-                    <span style="color: #fff;">root@erwin:~$</span> ./connect.sh<br>
-                    <span style="color: #0f0;">Initializing communication protocols...</span>
-                </p>
-                
-                <div class="row mt-4">
-                    <div class="col-md-6">
-                        <div class="terminal-border p-4">
-                            <h5 style="color: #00ff00;">└── Contact Information</h5>
-                            <p style="color: #888;">
-                                <span style="color: #fff;">Email:</span> <a href="mailto:erwinlayson@sksu.edu.ph" style="color: #00ff00; text-decoration: none;">erwin@example.com</a><br>
-                                <span style="color: #fff;">Phone:</span> <span style="color: #00ff00;">+639752723468</span><br>
-                                <span style="color: #fff;">Location:</span> <span style="color: #00ff00;">Isulan Sultan Kudarat</span><br>
-                                <span style="color: #fff;">Timezone:</span> <span style="color: #00ff00;">UTC+8</span>
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-6">
-                        <div class="terminal-border p-4">
-                            <h5 style="color: #00ff00;">└── Social Networks</h5>
-                            <p style="color: #888;">
-                                <span style="color: #fff;">GitHub:</span> <a href="https://github.com/erwinLayson/erwinDev" style="color: #00ff00; text-decoration: none;">Click for GitHub</a><br>
-                                <span style="color: #fff;">Facebook:</span> <a href="https://www.facebook.com/warsak.busdak" style="color: #00ff00; text-decoration: none;">Erwin B. Layson</a><br>
-                                <span style="color: #fff;">Portfolio:</span> <a href="#" style="color: #00ff00; text-decoration: none;">erwin.dev</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="row mt-4">
-                    <div class="col-12">
-                        <div class="terminal-border p-4">
-                            <h5 style="color: #00ff00;">└── Send Message</h5>
-                            <form class="mt-3">
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <input type="text" class="form-control" placeholder="Your Name" style="background: #111; border: 1px solid #00ff00; color: #00ff00;">
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <input type="email" class="form-control" placeholder="Your Email" style="background: #111; border: 1px solid #00ff00; color: #00ff00;">
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="Subject" style="background: #111; border: 1px solid #00ff00; color: #00ff00;">
-                                </div>
-                                <div class="mb-3">
-                                    <textarea class="form-control" rows="5" placeholder="Your Message" style="background: #111; border: 1px solid #00ff00; color: #00ff00; resize: vertical;"></textarea>
-                                </div>
-                                <button type="submit" class="btn" style="background: #00ff00; color: #000; font-weight: bold; border: none; padding: 10px 30px;">
-                                    SEND MESSAGE
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                
-                <p style="color: #00ff00; margin-top: 20px;">
-                    <span style="color: #fff;">root@erwin:~$</span> echo "Let's build something amazing together!"<br>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Matrix Animation Script -->
-    <script src="script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,134 @@
+body {
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    color: #00FF41;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    .profile-pic {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 20px rgba(49, 226, 10, 0.769);
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+    img {
+        height: 200px;
+        width: 200px;
+        background-color: #fff;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+}
+
+.navigation {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-around;
+    box-shadow: 0 0 20px rgba(49, 226, 10, 0.769);
+    border-radius: 10px;
+
+    a {
+        text-decoration: none;
+        color: #00FF41;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 8px;
+        transition: 0.3s ease-in-out;
+        border-radius: 8px;
+    }
+    a:hover {
+        box-shadow: 0 0 20px rgba(49, 226, 10, 0.769);
+    }
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ 
+    #home {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+        box-shadow: 0 0 20px rgba(49, 226, 10, 0.769);
+        border-radius: 20px;
+        justify-content: space-between;
+
+
+        .welcome-msg {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+     #about {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+        box-shadow: 0 0 20px rgba(49, 226, 10, 0.769);
+        border-radius: 20px;
+     }
+
+     #skill {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        box-shadow: 0 0 20px rgba(49, 226, 10, 0.769);
+        border-radius: 20px;
+        padding: 20px;
+
+        .tech-icons {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 320px;
+
+            i {
+                font-size: 25px;
+            }
+        }
+
+        .tech-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            i {
+                font-size: 25px;
+            }
+        }
+     }
+
+     #contact {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 20px rgba(49, 226, 10, 0.769);
+        border-radius: 20px;
+        padding: 20px;
+        gap: 20px;
+     }
+}
