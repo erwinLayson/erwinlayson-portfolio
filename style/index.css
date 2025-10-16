@@ -408,6 +408,11 @@ img.profile {
 
 /* Mobile phones (480px and below) */
 @media screen and (max-width: 480px) {
+    .mobile-menu-icon {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
     body {
         padding: 10px;
         font-size: 14px;
