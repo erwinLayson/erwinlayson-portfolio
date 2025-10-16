@@ -24,11 +24,34 @@
             </div>
        </div>
 
-        <div class="navigation">
+        <!-- Mobile Menu Icon (visible only on mobile) -->
+        <div class="mobile-menu-icon" onclick="toggleSidebar()">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+
+        <!-- Desktop Navigation (visible only on desktop) -->
+        <div class="navigation desktop-nav">
             <div class="home"><a href="#home">Home</a></div>
             <div class="home"><a href="#about">About</a></div>
             <div class="home"><a href="#skill">Languages</a></div>
             <div class="home"><a href="#contact">Contact</a></div>
+        </div>
+
+        <!-- Mobile Sidebar -->
+        <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3>Menu</h3>
+                <button class="close-btn" onclick="closeSidebar()">&times;</button>
+            </div>
+            <div class="sidebar-content">
+                <a href="#home" onclick="closeSidebar()">Home</a>
+                <a href="#about" onclick="closeSidebar()">About</a>
+                <a href="#skill" onclick="closeSidebar()">Languages</a>
+                <a href="#contact" onclick="closeSidebar()">Contact</a>
+            </div>
         </div>
 
         <div class="content">
@@ -114,5 +137,27 @@
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebarOverlay');
+            
+            sidebar.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+
+        function closeSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebarOverlay');
+            
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+
+        // Close sidebar when clicking on a link
+        document.querySelectorAll('.sidebar a').forEach(link => {
+            link.addEventListener('click', closeSidebar);
+        });
+    </script>
 </body>
 </html>
