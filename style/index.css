@@ -411,6 +411,8 @@ img.profile {
     position: fixed;
     top: 10px;
     right: 10px;
+    background-color: black;
+    z-index: 1000;
 }
 @media screen and (max-width: 480px) {
     body {
