@@ -132,3 +132,318 @@ body {
         gap: 20px;
      }
 }
+
+/* ========================================
+   MOBILE RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablets and below (768px and below) */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .header .welcome-message {
+        order: 2;
+    }
+
+    .header .welcome-message h1 {
+        font-size: 2rem;
+    }
+
+    .header .welcome-message h2 {
+        font-size: 1.2rem;
+    }
+
+    .header .profile-pic {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .header img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .navigation {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .navigation a {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    .content #home {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .content #about {
+        padding: 15px;
+    }
+
+    .content #skill {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .content #skill .tech-icons {
+        height: auto;
+    }
+
+    .content #skill .tech-icons i {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .content #skill .tech-info i {
+        font-size: 22px;
+    }
+
+    .content #contact {
+        padding: 15px;
+    }
+
+    .content #contact ul {
+        padding-left: 20px;
+    }
+}
+
+/* Mobile phones (480px and below) */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .container {
+        gap: 15px;
+    }
+
+    .header .welcome-message h1 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .header .welcome-message p {
+        font-size: 1rem;
+    }
+
+    .header .welcome-message h2 {
+        font-size: 1rem;
+    }
+
+    .header img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .header .profile-pic {
+        padding: 8px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .navigation .home {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation a {
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .content #home {
+        padding: 12px;
+    }
+
+    .content #home .welcome-msg h3 {
+        font-size: 1.3rem;
+    }
+
+    .content #home .welcome-msg p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .content #about {
+        padding: 12px;
+    }
+
+    .content #about h3 {
+        font-size: 1.3rem;
+    }
+
+    .content #about .about-me-msg p,
+    .content #about .about-me-msg ul {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .content #about .about-me-msg li {
+        margin-bottom: 8px;
+    }
+
+    .content #skill {
+        padding: 12px;
+    }
+
+    .content #skill h2,
+    .content #skill h3 {
+        font-size: 1.2rem;
+    }
+
+    .content #skill .tech-icons i {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .content #skill .tech-info {
+        gap: 15px;
+    }
+
+    .content #skill .tech-info i {
+        font-size: 18px;
+    }
+
+    .content #skill .what-i-can-do {
+        font-size: 1rem;
+    }
+
+    .content #skill .what-i-can-do ul {
+        padding-left: 20px;
+    }
+
+    .content #skill .what-i-can-do li {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+    }
+
+    .content #contact {
+        padding: 12px;
+    }
+
+    .content #contact h3 {
+        font-size: 1.3rem;
+    }
+
+    .content #contact ul {
+        padding-left: 15px;
+    }
+
+    .content #contact li {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+        word-wrap: break-word;
+    }
+
+    .content #contact a {
+        font-size: 0.9rem;
+        word-wrap: break-word;
+    }
+}
+
+/* Extra small devices (320px and below) */
+@media screen and (max-width: 320px) {
+    body {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .header .welcome-message h1 {
+        font-size: 1.5rem;
+    }
+
+    .header .welcome-message h2 {
+        font-size: 0.9rem;
+    }
+
+    .header img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .navigation a {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .content #home .welcome-msg h3,
+    .content #about h3,
+    .content #skill h2,
+    .content #contact h3 {
+        font-size: 1.1rem;
+    }
+
+    .content #skill .tech-icons i,
+    .content #skill .tech-info i {
+        font-size: 16px;
+    }
+}
+
+/* Landscape orientation on mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    body {
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header .welcome-message {
+        order: 1;
+        text-align: left;
+    }
+
+    .header .profile-pic {
+        order: 2;
+    }
+
+    .header img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+}
+
+/* Smooth scrolling for all devices */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Improve touch targets for mobile */
+@media (hover: none) and (pointer: coarse) {
+    .navigation a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Optimize images for mobile */
+img {
+    max-width: 100%;
+    height: auto;
+}
