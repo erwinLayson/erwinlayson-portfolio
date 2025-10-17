@@ -11,6 +11,16 @@
 
 </head>
 <body>
+    <!-- Mobile Menu Icon (visible only on mobile) -->
+    <div class="mobile-menu-icon-nav-bar" >
+        <h1>Digital portfolio</h1>
+        <div class="mobile-menu-icon" onclick="toggleSidebar()">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+    </div>
+
     <div class="container">
        <div class="header">
             <div class="welcome-message">
@@ -20,16 +30,10 @@
             </div>
 
             <div class="profile-pic">
-                <img src="./image/me.jpg" alt="User profile" class="profile">
+                <img src="./image/me.png" alt="User profile" class="profile">
             </div>
        </div>
 
-        <!-- Mobile Menu Icon (visible only on mobile) -->
-        <div class="mobile-menu-icon" onclick="toggleSidebar()">
-            <div class="hamburger-line"></div>
-            <div class="hamburger-line"></div>
-            <div class="hamburger-line"></div>
-        </div>
 
         <!-- Desktop Navigation (visible only on desktop) -->
         <div class="navigation desktop-nav">
@@ -93,13 +97,15 @@
                  <!-- container for icons -->
                 <div class="tech-icons">
                     <h2>Languages</h2>
-                    <i class="devicon-javascript-plain colored" title="JavaScript"> JavaScipt</i>
-                    <i class="devicon-php-plain colored" title="PHP"> PHP</i>
-                    <i class="devicon-html5-plain colored" title="HTML5"> HTML</i>
-                    <i class="devicon-css3-plain colored" title="CSS3"> CSS</i>
-                    <i class="devicon-express-original" title="Express"> Express.js</i>
-                    <i class="devicon-nodejs-plain colored" title="Node.js"> Node.js</i>
-                    <i class="devicon-codeigniter-plain colored" title="CodeIgniter"> Code Igniter 4</i>
+                    <div class="language-icons">
+                        <i class="devicon-javascript-plain colored" title="JavaScript"> JavaScipt</i>
+                        <i class="devicon-php-plain colored" title="PHP"> PHP</i>
+                        <i class="devicon-html5-plain colored" title="HTML5"> HTML</i>
+                        <i class="devicon-css3-plain colored" title="CSS3"> CSS</i>
+                        <i class="devicon-express-original" title="Express"> Express.js</i>
+                        <i class="devicon-nodejs-plain colored" title="Node.js"> Node.js</i>
+                        <i class="devicon-codeigniter-plain colored" title="CodeIgniter"> Code Igniter 4</i>
+                    </div>
                 </div>
 
                 <div class="tech-info">
